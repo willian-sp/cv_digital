@@ -1,8 +1,10 @@
+/*****************************************************/
+/*Geral*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 html, body{
@@ -10,5 +12,205 @@ html, body{
 }
 
 body{
-    background: sandybrown;
+    font-family: "Nunito",sans-serif;
+    background:#F1F1F1;
 }
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "Nunito",sans-serif;
+    margin-bottom: .5em;
+}
+
+h1{
+    font-size: 1.6em;
+}
+
+h2{
+    font-size: 1.4em;
+    margin-bottom: 1em;
+}
+
+h3{
+    font-size: 1em;
+    margin: 15px 0 3px 0;
+}
+
+h4{
+    font-size: 1.4em;
+}
+
+h5{
+    font-size: 1.2em;
+}
+
+h6{
+    font-size: 1.1em;
+}
+
+p{
+    font-size: 1.2em;
+    line-height: 1.2em;
+    font-family: "Cairo",sans-serif;
+}
+
+ul{
+    font-family: 'Cairo',sans-serif;
+    list-style: none;
+    font-size: 1em;
+}
+
+.bgBlue{
+    background-color: skyblue;
+}
+
+.bgGreen{
+    background-color: greenyellow;
+}
+
+.bgGray{
+    background-color: gray;
+}
+/*****************************************************/
+/*Main*/
+
+main{
+    display: flex;
+    justify-content: center;
+    /* background: #eaedf4; */
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+#imgPerfil{
+    width: 100%;
+    height: auto;
+}
+
+aside{
+    width: 30%;
+    /* max-width: 500px; */
+    box-shadow: 0 0 10px 1px gray;
+}
+
+li{
+    height: 35px;
+    padding-left: 50px;
+    background-size: 35px;
+    background-repeat: no-repeat;
+    padding-top: 0.3em;
+    margin-bottom: 1em;
+}
+
+.listProfissao{
+    background-image: url('../img/web.png');    
+}
+
+.listEmail{
+    background-image: url('../img/email.png');    
+}
+
+.listContato{
+    background-image: url('../img/celular.png');    
+}
+
+#infosPessoais{
+    padding: 0 1em;
+}
+
+#infosPessoais > section{
+    padding: 1em 0;
+}
+
+#infosPessoais > section:not(:last-of-type){
+    border-bottom: 2px solid lightgray;
+}
+
+.boxProg{
+    margin-bottom: 1em;
+}
+
+.boxProg,.bgProg{
+    border-radius: 100px;
+    background: lightgray;
+    height: 0.8em;
+}
+
+.bgProg{
+    background: #009688;
+}
+
+.bgProg100{
+    width: 100%;
+}
+
+.bgProg75{
+    width: 75%;
+}
+
+.bgProg50{
+    width: 50%;
+}
+
+
+main > article{
+    padding: 0 1em;
+    width: 70%;
+}
+
+#infoFormacaoExp > section{
+    box-shadow: 0 0 10px 1px gray;
+    padding: 1em;
+}
+
+#infoFormacaoExp > section:not(:first-of-type){
+    margin-top: 30px;
+}
+
+#infoExp > section{
+    padding: 0 1em 1em 1em;
+}
+
+#infoExp > section:not(:last-of-type){
+    border-bottom: 2px solid lightgray;
+}
+
+#infoExp > section h3{
+    font-size: 1.4em;
+}
+
+#infoExp > section p{
+    padding: .5em 0;
+}
+
+#infoExp .data{
+    padding-left: 55px;
+    display: inline-block;
+    background-image: url('../img/calendario.png');
+    background-size: 35px;
+    background-repeat: no-repeat;
+}
+
+.data span{
+    background: #009688;
+    border-radius: 6px;
+    padding: 0 1em;
+    font-size: 14px;
+    color: snow;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    outline: none;
+}
+
+#exPro{
+    font-size: 1.6em;
+    padding-left: 50px;
+    height: 60px;
+    background-image: url('../img/work.png');
+    background-repeat: no-repeat;
+    background-size: 35px;
+    padding-top: 0.2em;
+}
+
+/*****************************************************/
+/*Footer*/
