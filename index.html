@@ -14,6 +14,9 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Nunito:wght@300;400;500;600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+
+        <script src="https://kit.fontawesome.com/fee348e737.js" crossorigin="anonymous"></script>
 
         <link rel="stylesheet" href="css/estilo.css">
     </head>
@@ -23,17 +26,34 @@
                 <img id="imgPerfil" src="img/perfil.jpg">
 
                 <article id="infosPessoais">
-                    <section>
+                    <img id="imgPerfilMobile" src="img/perfil.jpg"> <!--Não está sendo usado-->
+
+                    <section id="infoContato">
                         <h2>Willian Messias</h2>
     
                         <ul>
                             <li class="listProfissao">Desenvolvedor Front-End</li>
                             <li class="listEmail">willian.messias.sp@gmail.com</li>
-                            <li class="listContato">(11) 98707-0192)</li>
+                            <a href="https://wa.me/5511987970192"><li class="listContato">(11) 98707-0192)</li></a>
+                            <li id="listContatoMobile" class="listContatoMobile">Informações de Contato</li>
                         </ul>
                     </section>
+
+                    <!-- Modal com as informações de Contato -->
+                    <section id="boxModalContato" class="modal invisivel">
+                        <section id="modalContato" class="animModal">
+                  
+                                <h1>Informações de Contato</h1>
+                                <ul>
+                                    <li class="listProfissao">Desenvolvedor Front-End</li>
+                                    <li class="listEmail">willian.messias.sp@gmail.com</li>
+                                    <a href="https://wa.me/5511987970192"><li class="listContato">(11) 98707-0192)</li></a>
+                                </ul>   
+        
+                        </section>
+                    </section>
     
-                    <section>
+                    <section id="habilidades">
                         <h2>Habilidades</h2>
     
                         <h3>HTML 5</h3>
@@ -42,17 +62,19 @@
                         <section class="boxProg"><div class="bgProg bgProg100"></div></section>
                         <h3>JS</h3>
                         <section class="boxProg"><div class="bgProg bgProg75"></div></section>
-                        <h3>Wordpress</h3>
-                        <section class="boxProg"><div class="bgProg bgProg75"></div></section>
+                        <h3>PHP</h3>
+                        <section class="boxProg"><div class="bgProg bgProg50"></div></section>
                         <h3>Node JS</h3>
                         <section class="boxProg"><div class="bgProg bgProg50"></div></section>
+                        <h3>Wordpress</h3>
+                        <section class="boxProg"><div class="bgProg bgProg75"></div></section>
                         <h3>My SQL (T-SQL)</h3>
                         <section class="boxProg"><div class="bgProg bgProg75"></div></section>
                         <h3>GIT</h3>
                         <section class="boxProg"><div class="bgProg bgProg100"></div></section>
                     </section>
 
-                    <section>
+                    <section id="idiomas">
                         <h2>Idiomas</h2>
     
                         <h3>Português</h3>
@@ -65,7 +87,7 @@
 
             <article id="infoFormacaoExp">
                 <section id="infoExp">
-                    <h2 id="exPro">Experiência Profissional</h2>
+                    <h1 id="exPro">Experiência Profissional</h1>
 
                     <section>
                         <h3>Somas (Master Tech)</h3>
@@ -95,12 +117,121 @@
                 </section>
 
                 <section id="infoFormacao">
-                    <h1>Formação</h1>
+                    <h2 id="academico">Formação Acadêmica</h2>
+
+                    <!-- Formação Acadêmica -->
+                    <section class="containerFormacao">
+                        <section class="unicsul">
+                            <img src="img/unicsul.png">
+                            <div>
+                                <h2>Sistemas de Informação</h2>
+                                <span class="concluido">Concluído</span>
+                                <!-- <p>Bacharel no curso de Sistemas de Informação pela Universidade Cruzeiro do Sul</p> -->
+                            </div>
+                            <footer>
+                                <p class="data">Jan 2019 - Dez 2022</p>
+                            </footer>
+                        </section>
+                        <section class="etec">
+                            <img src="img/etec.webp">
+                            <div>
+                                <h2>Técnico em Informática</h2>
+                                <span class="concluido">Concluído</span>
+                                <!-- <p>Bacharel no curso de Sistemas de Informação pela Universidade Cruzeiro do Sul</p> -->
+                            </div>
+                            <footer>
+                                <p class="data">Jan 2012 - Jul 2013</p>
+                            </footer>
+                        </section>
+                    </section>
+
+                    <!-- Cursos Livres -->
+                    <h2 id="cursos">Cursos Livres</h2>
+
+                    <section class="containerFormacao">
+                        <section class="udemy">
+                            <img src="img/udemy.png">
+                            <div>
+                                <h2>Node JS do Zero a Maestria</h2>
+                                <span class="andamento">Cursando</span>
+                                <!-- <p>Bacharel no curso de Sistemas de Informação pela Universidade Cruzeiro do Sul</p> -->
+                            </div>
+                            <footer>
+                                <p class="data">Out 2022 - Fev 2023</p>
+                            </footer>
+                        </section>
+                        
+                        <section class="coders">
+                            <img src="img/cod3rs.jpg">
+                            <div>
+                                <h2>Web Moderno com JS 2022</h2>
+                                <span class="andamento">Cursando</span>
+                                <!-- <p>Bacharel no curso de Sistemas de Informação pela Universidade Cruzeiro do Sul</p> -->
+                            </div>
+                            <footer>
+                                <p class="data">Jun 2022 - Mar 2023</p>
+                            </footer>
+                        </section>
+
+                        <section class="udemy">
+                            <img src="img/udemy.png">
+                            <div>
+                                <h2>PHP 7 Completo</h2>
+                                <span class="andamento">Cursando</span>
+                                <!-- <p>Bacharel no curso de Sistemas de Informação pela Universidade Cruzeiro do Sul</p> -->
+                            </div>
+                            <footer>
+                                <p class="data">Nov 2022 - Abr 2023</p>
+                            </footer>
+                        </section>
+                    </section>
+
+                    <section class="containerFormacao">
+                        <section class="fiap">
+                            <img src="img/fiap.png">
+                            <div>
+                                <h2>Blockchain Advanced, Fiap</h2>
+                                <span class="concluido">Concluído</span>
+                                <!-- <p>Bacharel no curso de Sistemas de Informação pela Universidade Cruzeiro do Sul</p> -->
+                            </div>
+                            <footer>
+                                <p class="data">Jan 2022 - Jan 2022</p>
+                            </footer>
+                        </section>
+                        
+                        <section class="coders">
+                            <img src="img/cod3rs.jpg">
+                            <div>
+                                <h2>Web Moderno com JS 2022</h2>
+                                <span class="concluido">Concluído</span>
+                                <!-- <p>Bacharel no curso de Sistemas de Informação pela Universidade Cruzeiro do Sul</p> -->
+                            </div>
+                            <footer>
+                                <p class="data">Jul 2019 - Ago 2019</p>
+                            </footer>
+                        </section>
+
+                        <section class="udemy">
+                            <img src="img/udemy.png">
+                            <div>
+                                <h2>Introdução ao Scrum</h2>
+                                <span class="concluido">Concluído</span>
+                                <!-- <p>Bacharel no curso de Sistemas de Informação pela Universidade Cruzeiro do Sul</p> -->
+                            </div>
+                            <footer>
+                                <p class="data">Jan 2017 - Jan 2017</p>
+                            </footer>
+                        </section>
+                    </section>
                 </section>
             </article>
         </main>
         <footer>
-            Redes sociais
+            <a href="https://www.linkedin.com/in/wmessias/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/willian-sp"><i class="fa-brands fa-github"></i></a>
+            <a href="https://wa.me/5511987970192"><i class="fa-brands fa-whatsapp"></i></a>
         </footer>
+
+        <script src="js/animModal.js"></script>
     </body>
 </html>
